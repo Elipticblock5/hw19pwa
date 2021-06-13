@@ -39,7 +39,7 @@ self.addEventListener('install', function (e) {
 })
 
 //cache deletion
-self.addEventListener('activate' function (e) {
+self.addEventListener('activate' , function (e) {
     e.waitUntil(
         caches.keys().then(function (listKeys) {
             let cacheSaveList = listKeys.filter(function (key) {

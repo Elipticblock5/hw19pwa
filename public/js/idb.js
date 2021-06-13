@@ -51,7 +51,7 @@ function uploadTrans() {
   getAll.onsuccess = function() {
     
     if (getAll.result.length > 0) {
-      fetch('/api/transactions', {
+      fetch('/api/transactions/bulk', {
         method: 'POST',
         body: JSON.stringify(getAll.result),
         headers: {
