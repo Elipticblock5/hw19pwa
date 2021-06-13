@@ -1,12 +1,15 @@
 const APP_PREFIX = 'BudgetTracker-';
 const VERSION = 'verson-01';
 const CACHE_NAME = APP_PREFIX + VERSION;
+
+//debugged with Phil during office hours, had some typos.
 const FILES_TO_CACHE = [
     "./index.html",
     "./js/index.js",
     "./js/idb.js",
     "./css/styles.css",
-    "./manifest.json"
+    "./manifest.json",
+    "./icons"
 ];
 
 //pulling items from cache as resp
