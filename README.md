@@ -29,13 +29,13 @@ ISC
 ### Technology
 
 - JavaScript
-- JSON
 - HTML
 - CSS
 - Express.js
 - Mongoose
 - Heroku
 - MongoDB
+- Node.js
 
 ## Questions
 
