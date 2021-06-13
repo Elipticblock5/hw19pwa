@@ -78,5 +78,5 @@ function uploadTrans() {
   };
 }
 
-// listen for app coming back online
+
 window.addEventListener('online', uploadTrans);
