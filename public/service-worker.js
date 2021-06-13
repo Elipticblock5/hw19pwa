@@ -38,4 +38,22 @@ self.addEventListener('install', function (e) {
     )
 })
 
+//cache deletion
+self.addEventListener('activate' function (e) {
+    e.waitUntil(
+        caches.keys().then(function (listKeys) {
+            let cacheSaveList = listKeys.filter(function (key) {
+                return key.indexOf(APP_PREFIX);
+            })
 
+            cacheSaveList.push(CACHE_NAME);
+
+            return Promise.all(listKeys.map(function (key, i) {
+                if (cacheSaveList.indexOf(key) === -1) {
+                    console.log('Nate deleting this cache : ' + listKeys[i] );
+                    return caches.delete(listKeys[i]);
+                }
+            }));
+        })
+    );
+});
