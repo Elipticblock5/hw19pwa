@@ -46,11 +46,11 @@ function uploadTrans() {
   const transObjStore = trans.objectStore('new_trans');
 
   // get all records from store and set to a variable
-  const getAll = transObjStore.getAll();
+  const getAllRecords = transObjStore.getAll();
 
-  getAll.onsuccess = function() {
+  getAllRecords.onsuccess = function() {
     
-    if (getAll.result.length > 0) {
+    if (getAllRecords.result.length > 0) {
       fetch('/api/transactions/bulk', {
         method: 'POST',
         body: JSON.stringify(getAll.result),
