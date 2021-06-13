@@ -26,3 +26,16 @@ self.addEventListener('fetch', function(e) {
         })
     )
 })
+
+//event lister for caching
+
+self.addEventListener('install', function (e) {
+    e.waitUntil(
+        caches.open(CACHE_NAME).then(function (cache) {
+            console.log('Nate installing cache : ' + CACHE_NAME)
+            return cache.addAll(FILES_TO_CACHE)
+        })
+    )
+})
+
+
