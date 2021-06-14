@@ -2,6 +2,8 @@
 
 # BudgetTracker
 
+![Screenshot](/public/css/Screenshot budget.PNG)
+
 ## Licensing:
 
 [![license](https://img.shields.io/badge/license-ISC-yellow)](https://shields.io)
