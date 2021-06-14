@@ -2,7 +2,7 @@
 
 # BudgetTracker
 
-[Screenshot](./public/css/Screenshot budget.PNG)
+![Screenshot](https://github.com/Elipticblock5/hw19pwa/blob/main/public/css/Screenshot%20budget.PNG)
 
 ## Licensing:
 
