@@ -2,7 +2,7 @@
 
 # BudgetTracker
 
-[Screenshot](/public/css/Screenshot budget.PNG)
+[Screenshot](./public/css/Screenshot budget.PNG)
 
 ## Licensing:
 
