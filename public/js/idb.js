@@ -6,7 +6,7 @@ let db;
 //connects to indexed db
 const request = indexedDB.open('budget-tracker', 1);
 
-//from module 18.4.4 creates on object stor
+//from module 18.4.4 creates on object store
 request.onupgradeneeded = function(event) {
   const db = event.target.result;
   db.createObjectStore('new_trans', { autoIncrement: true });
@@ -27,7 +27,7 @@ request.onerror = function(event) {
   console.log(event.target.errorCode);
 };
 
-
+//save
 function saveTransRecord(record) {
  
   const trans = db.transaction(['new_trans'], 'readwrite');
@@ -38,6 +38,8 @@ function saveTransRecord(record) {
   transObjStore.add(record);
 }
 
+
+//upload
 function uploadTrans() {
 
   const trans = db.transaction(['new_trans'], 'readwrite');

@@ -12,7 +12,7 @@ const FILES_TO_CACHE = [
     "./icons"
 ];
 
-//pulling items from cache as resp
+//pulling items from cache as resppmse. used code from food-festival module as template. 
 self.addEventListener('fetch', function(e) {
     console.log('nate fetch request : ' + e.request.url)
     e.respondWith(
@@ -30,7 +30,7 @@ self.addEventListener('fetch', function(e) {
     )
 })
 
-//event lister for caching
+//event lister for caching resourcres, using food festival module as template
 
 self.addEventListener('install', function (e) {
     e.waitUntil(
@@ -41,7 +41,7 @@ self.addEventListener('install', function (e) {
     )
 })
 
-//cache deletion
+//cache deletion used food festival module as template
 self.addEventListener('activate' , function (e) {
     e.waitUntil(
         caches.keys().then(function (listKeys) {
